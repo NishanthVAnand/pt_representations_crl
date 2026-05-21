@@ -1,0 +1,38 @@
+# experiment params
+NUM_SEEDS: 30
+SEED: 0
+
+# if  hyperparameters tuning
+HYP_TUNE: False
+
+# env params
+DATA_PATH: "balanced_image_tokens"
+NUM_STATES: 5
+STAY_PROB: 0.8
+PHASE_LENGTH: 1e5
+NUM_PHASES: 2
+REWARD_NOISE_STD: 0.01
+SLIPPERY_PROB: 0.0
+WINDOW: 100
+
+NUM_TEST_SAMPLES: 64
+GAMMA: 0.9
+ENV_NAME: "image-mdp-v2"
+TOTAL_TIMESTEPS: 6e5
+NUM_ENVS: 1 # parallel environments
+NUM_STEPS: 32 # steps per environment in each update
+EPSILON: 0.2
+NUM_FEATURES: 256
+NUM_IMGS: 500
+
+# wandb params
+WANDB_MODE: "online"  # set to online to activate wandb
+ENTITY: "doina-precup"
+PROJECT: "Image-Hash"
+GROUP: "V2"
+alg:
+  WANDB_LOG_ALL_SEEDS: True # will log all the vmapped seeds separetely
+WANDB_LOG_INTERVAL: 20
+
+# where to save the params (if None, will not save)
+SAVE_PATH: null

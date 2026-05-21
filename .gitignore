@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.ipynb
+*.DS_Store
+.vscode/
+*.pickle
+*-checkpoint.py
+
+# C extensions
+*.so
+
+# Operating system files
+Thumbs.db
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+craftax/__pycache__/
+rgb_exp/__pycache__/
+craftax/outputs/
+rgb_exp/outputs/
+craftax/wandb/
+rgb_exp/wandb/

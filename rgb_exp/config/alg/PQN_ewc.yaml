@@ -1,0 +1,11 @@
+ALG_NAME: "PQN_ewc"
+NUM_MINIBATCHES: 4 # minibatches per epoch
+NUM_EPOCHS: 1 # minibatches per epoch
+NORM_INPUT: True
+NORM_TYPE: "layer_norm" # layer_norm or batch_norm
+LR: 0.001
+MAX_GRAD_NORM: 1.0
+
+FISHER_EMA_ALPHA: 0.99
+ANCHOR_EMA_ALPHA: 0.99
+EWC_LAMBDA: 1
